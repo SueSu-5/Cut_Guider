@@ -44,11 +44,7 @@ class WelcomeScreen extends StatelessWidget {
                   SizedBox(height: 8.0),
                   // Subtext
                   Text(
-                    'Best stock cutting calculator platform',
-                    style: TextStyle(fontSize: 14.0, color: Colors.grey),
-                  ),
-                  Text(
-                    'for all individuals.',
+                    'Stock cutting calculator platform',
                     style: TextStyle(fontSize: 14.0, color: Colors.grey),
                   ),
                 ],
@@ -62,7 +58,7 @@ class WelcomeScreen extends StatelessWidget {
                 ElevatedButton.icon(
                   icon: const Icon(Icons.arrow_right_alt),
                   onPressed: () {
-                     Navigator.push(
+                    Navigator.push(
                       context,
                       MaterialPageRoute(
                           builder: (context) => const HomeScreen()),
@@ -83,7 +79,6 @@ class WelcomeScreen extends StatelessWidget {
                 ElevatedButton.icon(
                   icon: const Icon(Icons.arrow_right_alt),
                   onPressed: () {
-                   
                     // Handle sign up button press
                   },
                   style: ElevatedButton.styleFrom(
@@ -100,58 +95,41 @@ class WelcomeScreen extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     // Google login button
-                    ElevatedButton.icon(
+                    IconButton(
                       onPressed: () {
                         // Handle Google login
                       },
-                      style: ElevatedButton.styleFrom(
+                      style: IconButton.styleFrom(
                         backgroundColor: Colors.red,
-                        minimumSize: const Size(250.0, 40.0),
+                        minimumSize: const Size(40.0, 40.0),
                       ),
                       icon: const Icon(Icons.g_translate, color: Colors.white),
-                      label: const Text('Google',
-                          style:
-                              TextStyle(fontSize: 16.0, color: Colors.white)),
                     ),
-                  ],
-                ),
-                const SizedBox(height: 8.0),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
-                    // Twitter login button
-                    ElevatedButton.icon(
+                    const SizedBox(
+                      width: 16,
+                    ),
+                    IconButton(
                       onPressed: () {
                         // Handle Twitter login
                       },
-                      style: ElevatedButton.styleFrom(
+                      style: IconButton.styleFrom(
                         backgroundColor: Colors.lightBlue,
-                        minimumSize: const Size(250.0, 40.0),
+                        minimumSize: const Size(40.0, 40.0),
                       ),
                       icon: const Icon(Icons.trending_up, color: Colors.white),
-                      label: const Text('Twitter',
-                          style:
-                              TextStyle(fontSize: 16.0, color: Colors.white)),
                     ),
-                  ],
-                ),
-                const SizedBox(height: 8.0),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
-                    // Instagram login button
-                    ElevatedButton.icon(
+                    const SizedBox(
+                      width: 16,
+                    ),
+                    IconButton(
                       onPressed: () {
                         // Handle Instagram login
                       },
-                      style: ElevatedButton.styleFrom(
+                      style: IconButton.styleFrom(
                         backgroundColor: Colors.orange,
-                        minimumSize: const Size(250.0, 40.0),
+                        minimumSize: const Size(40.0, 40.0),
                       ),
                       icon: const Icon(Icons.camera, color: Colors.white),
-                      label: const Text('Instagram',
-                          style:
-                              TextStyle(fontSize: 16.0, color: Colors.white)),
                     ),
                   ],
                 ),
